@@ -4,22 +4,22 @@
     div {text-align: center;}
 </style>
 
-<title>
-    <div class="header">
-        My Silly Website!
-    </div>
-</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CheddarWebsiteStyle.css">
+    <title>             
+            My Silly Website!
+    </title>
+</head>
 
 <body style="background-color:beige;">
     <h1 style="font-family:'Courier New'">Welcome to my silly website!<br></h1>
-    <h3 style="font-family:'Courier New'">Version 1.0.0<br></h3>
+    <h3 style="font-family:'Courier New'">Version 1.0.0</h3>
     <br>
     <h2 style="font-family:'Courier New'"> About me!<br></h2>
     <p style="font-family:'Courier New'" >I'm Cheddar, this website most likely to NOT be updated...<br></p>
     <p style="font-family:'Courier New'" >It is only for me to remember my HTML stuffs.</p>
-    <p style="font-family:'Courier New'" >It is obvious of how absurd this is.</p>
-    <p style="font-family:'Courier New'" >Here's a picture of Ryo by @JL_T4N on Twitter.</p>
-    <img src="FjionJ_agAUhKt0.jpg" alt="ryo" width="1500" height="900">
 </body>
 
 
