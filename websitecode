@@ -1,0 +1,27 @@
+<!DOCType html>
+<html lang ="en">
+<style>
+    div {text-align: center;}
+</style>
+
+<title>
+    <div class="header">
+        My Silly Website!
+    </div>
+</title>
+
+<body style="background-color:beige;">
+    <h1 style="font-family:'Courier New'">Welcome to my silly website!<br></h1>
+    <br>
+    <h2 style="font-family:'Courier New'"> About me!<br></h2>
+    <p style="font-family:'Courier New'" >I'm Cheddar, this website most likely to NOT be updated...<br></p>
+    <p style="font-family:'Courier New'" >It is only for me to remember my HTML stuffs.</p>
+    <p style="font-family:'Courier New'" >It is obvious of how absurd this is.</p>
+    <p style="font-family:'Courier New'" >Here's a picture of Ryo by @JL_T4N on Twitter.</p>
+    <img src="FjionJ_agAUhKt0.jpg" alt="ryo" width="1500" height="900">
+</body>
+
+
+</html>
+
+<!-- prolly use link href=-->
