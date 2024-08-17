@@ -12,6 +12,7 @@
 
 <body style="background-color:beige;">
     <h1 style="font-family:'Courier New'">Welcome to my silly website!<br></h1>
+    <h3 style="font-family:'Courier New'">Version 1.0.0<br></h3>
     <br>
     <h2 style="font-family:'Courier New'"> About me!<br></h2>
     <p style="font-family:'Courier New'" >I'm Cheddar, this website most likely to NOT be updated...<br></p>
