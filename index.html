@@ -53,33 +53,27 @@
             text-align: center;
         }
 
-        .stuff {
-            position: relative;
-            z-index: 1;
-            padding: 20px;
-            background: rgba(255, 255, 225, 0.8);
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: justify;
-            height: 300px; /* Example height */
+        .scrollable {
+            height: 300px; /* Ensure this is set to a fixed height */
             overflow-y: auto; /* Enable vertical scrolling */
             border: 1px solid #ccc; /* Optional: for visibility */
+            padding: 10px; /* Optional: to add some padding */
         }
 
-        /* Styling for scrollbars (WebKit browsers) */
-        .stuff::-webkit-scrollbar {
+        /* Scrollbar styling for WebKit browsers */
+        .scrollable::-webkit-scrollbar {
             width: 12px;
         }
 
-        .stuff::-webkit-scrollbar-track {
+        .scrollable::-webkit-scrollbar-track {
             background: #f1f1f1;
         }
 
-        .stuff::-webkit-scrollbar-thumb {
+        .scrollable::-webkit-scrollbar-thumb {
             background: #888;
         }
 
-        .stuff::-webkit-scrollbar-thumb:hover {
+        .scrollable::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
     </style>
@@ -90,7 +84,7 @@
             <h1>Welcome to my silly website!</h1>
             <h3>Version 1.1.0</h3>
         </div>
-        <div class="stuff">
+        <div class="scrollable">
             <h2>About me!</h2>
             <p>Hello, I'm <b>Cheddar</b>. You can also call me <b>Cheezcuits</b> or <b>Keso</b> or any variations of sorts. I probably like playing video games, doing silly codes, or reading mangas and manhwas. I am currently a freshman at Polytechnic University of the Philippines (PUP) for short.</p> 
             
