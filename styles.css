@@ -19,7 +19,7 @@ body, html {
             .background {
                 position: relative;
                 height: 100vh; 
-                background: url('FjionJ_agAUhKt0.jpg') no-repeat center center fixed; 
+                background: url('public/image/FjionJ_agAUhKt0.jpg') no-repeat center center fixed; 
                 background-size: cover;
                 overflow: hidden;
             }
