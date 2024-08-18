@@ -63,12 +63,20 @@
                 text-align: justify;
             }  
         
-            .scrollable {
-              width: 300px;
-              height: 200px;
-              overflow-x: hidden; /* No horizontal scrolling */
-              overflow-y: auto;   /* Vertical scrolling */
-              border: 1px solid #ccc; /* Optional: for visibility */
+            .stuff::-webkit-scrollbar {
+                width: 12px;
+            }
+    
+            .stuff::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+    
+            .stuff::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+    
+            .stuff::-webkit-scrollbar-thumb:hover {
+                background: #555;
             }
     </style>
    
