@@ -1,47 +1,25 @@
-<!DOCType html>
-<html lang ="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> My Silly Website!<br></title>
+    <title>My Silly Website!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
-<body >
-<div class="background">
-    <div class="content">
-        <h1>Welcome to my silly website!<br></h1>
-        <h3>Version 1.0.2</h3>
-        <br>
+<body>
+    <div class="background">
+        <div class="content">
+            <h1>Welcome to my silly website!</h1>
+            <h3>Version 1.0.2</h3>
+        </div>
+        <div class="stuff">
+            <h2>About me!</h2>
+            <p>Hello, I'm <b>Cheddar</b>. You can also call me <b>Cheezcuits</b> or <b>Keso</b> or any variations of sorts. I probably like playing video games, doing silly codes, or reading mangas and manhwas. I am currently a freshman at Polytechnic University of the Philippines (PUP) for short.</p> 
+            
+            <h2>What is this website?</h2>
+            <p>The background image is made by @JL_T4N on Twitter :></p>
+        </div>
     </div>
-    <div class="stuff" font-align="left">
-        <h2> About me!<br></h2>
-        <p>Hello, I'm <b>Cheddar</b>. You can call also call me <b>Cheezcuits</b> or <b>Keso</b> or any variations of sorts. I probably like playing video games, do silly codes, or read mangas and manhwas. I am currently a freshman on Polytechnic University of the Philippines or PUP for short. <br></p> 
-        <br>
-        <h2> What is this website?</h2>
-        
-        <p>Background image is made by @JL_T4N on Twitter :></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-    </div>
-</div>
 </body>
-
-
 </html>
-
-<!-- prolly use link href=-->
