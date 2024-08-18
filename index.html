@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My Silly Website!</title>
     <style>
-     body, html {
+        body, html {
             margin: 0;
             padding: 0;
             height: 100%;
@@ -14,72 +14,75 @@
             background-color: #f0f0f0;
             opacity: 0;
             animation: fadeIn 0.5s ease-in forwards;
-            }
+        }
 
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
             }
-            .background {
-                position: relative;
-                height: 100vh; 
-                background: url('FjionJ_agAUhKt0.jpg') no-repeat center center fixed; 
-                background-size: cover;
-                overflow: hidden;
+            to {
+                opacity: 1;
             }
-    
-            .overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.5);
-                z-index: 0; 
-            }
-    
-            /* The content stuff */
-            .content {
-                position: relative;
-                z-index: 1;
-                padding: 20px;
-                background: rgba(255, 255, 225, 0.8); 
-                max-width: 1000px;
-                margin: 0 auto;
-                text-align: center;
-            }   
+        }
 
-            .stuff {
-                position: relative;
-                z-index: 1;
-                padding: 20px;
-                background: rgba(255, 255, 225, 0.8); 
-                max-width: 1000px;
-                margin: 0 auto;
-                text-align: justify;
-            }  
-        
-            .stuff::-webkit-scrollbar {
-                width: 12px;
-            }
-    
-            .stuff::-webkit-scrollbar-track {
-                background: #f1f1f1;
-            }
-    
-            .stuff::-webkit-scrollbar-thumb {
-                background: #888;
-            }
-    
-            .stuff::-webkit-scrollbar-thumb:hover {
-                background: #555;
-            }
+        .background {
+            position: relative;
+            height: 100vh;
+            background: url('FjionJ_agAUhKt0.jpg') no-repeat center center fixed;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            background: rgba(255, 255, 225, 0.8);
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .stuff {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            background: rgba(255, 255, 225, 0.8);
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: justify;
+            height: 300px; /* Example height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 1px solid #ccc; /* Optional: for visibility */
+        }
+
+        /* Styling for scrollbars (WebKit browsers) */
+        .stuff::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        .stuff::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .stuff::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        .stuff::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
     </style>
-   
 </head>
 <body>
     <div class="background">
