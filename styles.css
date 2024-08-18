@@ -3,14 +3,7 @@ body, html {
             padding: 0;
             height: 100%;
             font-family: 'Courier New', Courier, monospace, sans-serif;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
             background-color: #f0f0f0;
-            height: 100vh;
-            margin: 0;
-
-            /* Set up the fade-in effect */
             opacity: 0;
             animation: fadeIn 0.5s ease-in forwards;
             }
