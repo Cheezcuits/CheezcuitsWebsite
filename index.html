@@ -5,131 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My Silly Website!</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: 'Courier New', Courier, monospace, sans-serif;
-            background-color: #f0f0f0;
-            overflow: auto /* what makes the website scroll*/
-            opacity: 0;
-            animation: fadeIn 0.5s ease-in forwards;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .background {
-            position: relative;
-            min-height: 100vh; /* Ensure this covers at least the viewport height */
-            background: url('FjionJ_agAUhKt0.jpg') no-repeat center center fixed;
-            background-size: cover;
-            overflow: hidden;
-        }
-
-        .content {
-            padding: 20px;
-            background: rgba(255, 255, 225, 0.8);
-            max-width: 1000px;
-            border-radius: 30px;
-            border: none;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .stuff {
-            padding: 20px;
-            background: rgba(255, 255, 225, 0.8);
-            max-width: 1000px;
-            border-radius: 30px;
-            border: none;
-            margin: 0 auto;
-            text-align: justify;
-            /* Ensure there's enough content to enable scrolling */
-        }
-
-        /* Optional scrollbar styling */
-        ::-webkit-scrollbar {
-            width: 12px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #888;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    h5 {
+        text-align: center;
+        margin: 5px;
+    }
+</style>
 <body>
     
     <div class="background">
         <br>
         <div class="content">
             <h1>Welcome to my silly website!</h1>
-            <h3>Version 1.1.2</h3>
+            <h3>Version 1.1.3</h3>
         </div>
         <br>
         
         <div class="stuff">
             <h2>About me!</h2>
             <p>Hello, I'm <b>Cheddar</b>. You can also call me <b>Cheezcuits</b> or <b>Keso</b> or any variations of sorts. I probably like playing video games, doing silly codes, or reading mangas and manhwas. I am currently a freshman at Polytechnic University of the Philippines (PUP) for short.</p> 
-            
-            <h2>What is this website?</h2>
-            <p>This website revolves around me trying to hone my skills around HTML and CSS and possibly JavaScript too. But with the looks of this website right now (v1.1.2) it is absolutely abysmal.<br></p>
+        
+            <h2>What is this website all about?</h2>
+            <p>This website revolves around me trying to hone my skills around HTML and CSS and possibly JavaScript too. But with the looks of this website right now (v1.1.3) it is absolutely abysmal.<br></p>
             <p>It is expected for this website to change with time.<br></p>
+
+            <p><br>The background image is made by @JL_T4N on Twitter :></p>
 
             <h2>Works</h2>
             <p> Coming Soon!<br><br></p>
-            
-            <p>=========================================================================================================<br><br></p>
-            <h3>Update Logs </h2>
-            <h4>Version 1.0.0</h4>
-            <p>(8/17/24)</p>
-            <p>The creation of the website, ryo is not the background.</p> 
-            
-            <h4>Version 1.0.1</h4>
-            <p>(8/17/24)</p>
-            <p>Ryo is the background but slowly fades out.</p> 
-           
-            <h4>Version 1.0.2</h4>
-            <p>(8/17/24)</p>
-            <p>Ryo is the background but remains this time.</p> 
-            <p>Added a fade in to the website.</p> 
-       
-            <h4>Version 1.1.0</h4>
-            <p>(8/18/24)</p>
-            <p>Imported this depository to Vercel.(Took way too long to fix)</p> 
-            <p>Added more text on "About me!", and more sections about this webpage.</p>
-          
-            <h4>Version 1.1.1</h4>
-            <p>(8/18/24)</p>
-            <p>Added the scroll bar, because it didnt work for some reason.
-            <p> Resixed the Update log.</p>
-            <p>Added some stuff.</p>
-            <p>Added date of version.</p>
 
-            <h4>Version 1.1.2</h4>
-            <p>(8/18/24)</p>
-            <p>Added rounded corners and separated the title and the content.</p>
-            <br>
-            <br>
-            <br>
-            <p>The background image is made by @JL_T4N on Twitter :></p>
+            <h5>Stuffs!</h5>
+            <!-- buttons -->
+            <div id="Information" style="text-align: center;">
+                <button type="button" class="UpdateLogBtn" onclick="toggleUpdateLog()"><b>Update Log</b></button>
+                <br>
+                <div class="UpdateLog" id="UpdateLog">
+                   <h2> Update Log!</h2>
+                    <h4>Version 1.0.0</h4>
+                    <p>(8/17/24)</p>
+                    <p>The creation of the website, ryo is not the background.</p> 
+                    
+                    <h4>Version 1.0.1</h4>
+                    <p>(8/17/24)</p>
+                    <p>Ryo is the background but slowly fades out.</p> 
+                   
+                    <h4>Version 1.0.2</h4>
+                    <p>(8/17/24)</p>
+                    <p>Ryo is the background but remains this time.</p> 
+                    <p>Added a fade in to the website.</p> 
+                
+                    <h4>Version 1.1.0</h4>
+                    <p>(8/18/24)</p>
+                    <p>Imported this depository to Vercel.(Took way too long to fix)</p> 
+                    <p>Added more text on "About me!", and more sections about this webpage.</p>
+                  
+                    <h4>Version 1.1.1</h4>
+                    <p>(8/18/24)</p>
+                    <p>Added the scroll bar, because it didnt work for some reason.
+                    <p> Resixed the Update log.</p>
+                    <p>Added some stuff.</p>
+                    <p>Added date of version.</p>
+                
+                    <h4>Version 1.1.2</h4>
+                    <p>(8/18/24)</p>
+                    <p>Added rounded corners and separated the title and the content.</p>
+
+                    <h4>Version 1.1.3</h4>
+                    <p>(8/19/24)</p>
+                    <p>Added a popup for the update log.</p>
+                    <br>
+                    <br>
+                    <br>
+                   <button type="button" onclick="toggleUpdateLog()">Return</button>
+                </div>
+            </div>
         </div>
+        
     <br>
     </div>
+
+    <script>
+        
+        function toggleUpdateLog() { /*Exit and entrance of the popup*/
+            const updateLog = document.getElementById("UpdateLog");
+            if (updateLog.classList.contains("open-UpdateLog")) {
+                updateLog.classList.remove("open-UpdateLog");
+            } else {
+                updateLog.classList.add("open-UpdateLog");
+            }
+        }
+    </script>
 </body>
 </html>
