@@ -8,120 +8,122 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="Images/favicon.png">
 </head>
-<style>
-    h5 {
-        text-align: center;
-        margin: 5px;
-    }
-</style>
 <body>
-    
     <div class="background">
         <br>
         <div class="content">
             <h1>Welcome to my silly website!</h1>
-            <h3>Version 1.1.4</h3>
+            <h3>Version 1.1.5</h3>
         </div>
         <br>
-        
         <div class="stuff">
             <h2>About me!</h2>
-            <p>Hello, I'm <b>Cheddar</b>. You can also call me <b>Cheezcuits</b> or <b>Keso</b> or any variations of sorts. I probably like playing video games, doing silly codes, or reading mangas and manhwas. I am currently a freshman at Polytechnic University of the Philippines (PUP) for short.</p> 
+            <p>Hello, I'm <b>Cheddar</b>. You can also call me <b>Cheezcuits</b> or <b>Keso</b> or any variations of sorts. I enjoy playing video games, doing silly coding projects, and reading mangas and manhwas. I am currently a freshman at Polytechnic University of the Philippines (PUP) for short.</p> 
         
             <h2>What is this website all about?</h2>
-            <p>This website revolves around me trying to hone my skills around HTML and CSS and possibly JavaScript too. But with the looks of this website right now (v1.1.4) it is absolutely abysmal.<br></p>
-            <p>It is expected for this website to change with time.<br></p>
+            <p>This website revolves around me trying to hone my skills in HTML, CSS, and possibly JavaScript. With the current state of the website (v1.1.5), it is still a work in progress.<br></p>
+            <p>Expect changes to this website over time.<br></p>
 
             <p><br>The background image is made by @JL_T4N on Twitter :></p>
 
-            <h2>Works</h2>
-            <p> Coming Soon! If there is one...<br><br></p>
+            <h2>Works and Stuff</h2>
+            <p>Coming soon! If there is any...<br><br></p>
 
             <h5>Stuffs!</h5>
+
             <!-- UpdateLog Popup -->
-            <div id="Information" style="text-align: center;">
-                <button type="button" class="UpdateLogBtn" onclick="toggleUpdateLog()"><b>Update Log</b></button>
-                    <div class="UpdateLog" id="UpdateLog">
-                        <h2> Update Log!</h2>
-                        <h4>Version 1.0.0</h4>
-                        <p>(8/17/24)</p>
-                        <p>The creation of the website, ryo is not the background.</p> 
-                        
-                        <h4>Version 1.0.1</h4>
-                        <p>(8/17/24)</p>
-                        <p>Ryo is the background but slowly fades out.</p> 
-                    
-                        <h4>Version 1.0.2</h4>
-                        <p>(8/17/24)</p>
-                        <p>Ryo is the background but remains this time.</p> 
-                        <p>Added a fade in to the website.</p> 
-                    
-                        <h4>Version 1.1.0</h4>
-                        <p>(8/18/24)</p>
-                        <p>Imported this depository to Vercel.(Took way too long to fix)</p> 
-                        <p>Added more text on "About me!", and more sections about this webpage.</p>
-                    
-                        <h4>Version 1.1.1</h4>
-                        <p>(8/18/24)</p>
-                        <p>Added the scroll bar, because it didnt work for some reason.
-                        <p>Resixed the Update log.</p>
-                        <p>Added some stuff.</p>
-                        <p>Added date of version.</p>
-                    
-                        <h4>Version 1.1.2</h4>
-                        <p>(8/18/24)</p>
-                        <p>Added rounded corners and separated the title and the content.</p>
+            <button type="button" class="UpdateLogBtn"><b>Update Log</b></button>
+            <div class="UpdateLog" id="UpdateLog">
+                <span class="close-btn">&times;</span>
+                <h2>Update Log!</h2>
+                <h4>Version 1.1.5</h4>
+                <p>(8/20/24)</p>
+                <p>Made the popups close when clicking outside the popup or on other popups.</p>
+                <p>Updated the Update Log to show the most recent changes.</p>
+                <p>Resized the popup size, font size and color a bit.</p>
+                <p>Added a button and pop for the "Works and Stuff", "Manga Recommendations".
+                <p>The "QnA" popup isnt working so I will add it soon.</p>
+                <p>Unfortunately, there is no content <u>FOR NOW</u> from the aforementioned popups.</p>
+                </p>
+                <h4>Version 1.1.4</h4>
+                <p>(8/19/24)</p>
+                <p>Added a Spotify playlist and created a popup for it.</p>
+                <p>Also added a favicon.</p>
+                <h4>Version 1.1.3</h4>
+                <p>(8/19/24)</p>
+                <p>Added a popup for the update log.</p>
+                <h4>Version 1.1.2</h4>
+                <p>(8/18/24)</p>
+                <p>Added rounded corners and separated the title from the content.</p>
+                <h4>Version 1.1.1</h4>
+                <p>(8/18/24)</p>
+                <p>Added a scroll bar, which was not working previously.</p>
+                <p>Resized the Update Log.</p>
+                <p>Added some content and the date of each version.</p>
+                <h4>Version 1.1.0</h4>
+                <p>(8/18/24)</p>
+                <p>Imported this repository to Vercel (took too long to fix).</p> 
+                <p>Added more text to "About Me!" and more sections to the webpage.</p>
+                <h4>Version 1.0.2</h4>
+                <p>(8/17/24)</p>
+                <p>Made Ryo the background and ensured it stays visible.</p> 
+                <p>Added a fade-in effect to the website.</p> 
+                <h4>Version 1.0.1</h4>
+                <p>(8/17/24)</p>
+                <p>Ryo was the background but gradually faded out.</p> 
+                <h4>Version 1.0.0</h4>
+                <p>(8/17/24)</p>
+                <p>Initial creation of the website; Ryo was not the background.</p>
+                <button type="button" class="close-popup">Return</button>
+            </div>
 
-                        <h4>Version 1.1.3</h4>
-                        <p>(8/19/24)</p>
-                        <p>Added a popup for the update log.</p>
+            <!-- Spotify Playlist -->
+            <button type="button" class="SpotifyPlaylistBtn"><b>Spotify</b></button>
+            <div class="SpotifyPlaylist" id="SpotifyPlaylist">
+                <span class="close-btn">&times;</span>
+                <h2>Spotify Playlist</h2>
+                <p>You will see a lot of terrible choices...</p>
+                <p>Since it only shows 100 songs, you can visit the almost <b><u>500</u></b> [dear lord, what is wrong with me] songs on my very "<b>normal</b>" playlist in the top right of the playlist :></p>
+                <p>Good luck with this playlist... oh god, it's horrendous...</p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1ELNj8xXptxaTBgM5dQX87?utm_source=generator" width="90%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <br>
+                <h2>Yorushika Playlist</h2>
+                <p>Let's just say I'm a huge fan of this...</p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Bp5RRR2yn7h1QO8B7ySAU?utm_source=generator" width="90%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <button type="button" class="close-popup">Return</button>
+            </div>
 
-                        <h4>Version 1.1.4</h4>
-                        <p>(8/19/24)</p>
-                        <p>Added a spotify playlist and created a popup for it.</p>
-                        <p>Also added a favicon.</p>
-                        <br>
-                        <br>
-                        <br>
-                        <button type="button" onclick="toggleUpdateLog()">Return</button>
-                    </div>
+            <!-- Works and Stuff -->
+            <button type="button" class="WorksAndStuffBtn"><b>Works and Stuff!</b></button>
+            <div class="WorksAndStuff" id="WorksAndStuff">
+                <span class="close-btn">&times;</span>
+                <h2>Works and Stuff</h2>
+                <p>Under Construction...</p>
+                <button type="button" class="close-popup">Return</button>
+            </div>
 
-                <!--Spotify Playlist-->
-                <button type="button" class="SpotifyPlaylistBtn" onclick="toggleSpotifyPlaylist()"><b>Spotify</b></button>
-                    <div class="SpotifyPlaylist" id="SpotifyPlaylist">
-                        <h2>Spotify Playlist</h2>
-                        <p>You will see a lot of horrendous stuff...</p>
-                        <p>Also, since it only shows 100 songs, you can visit the almost <b><u>500</u></b> [dear lord what is wrong with me] songs on my very "<b>normal</b>" playlist on the top right of the playlist :></p>
-                        <p>I have taste PLEASE OPEN IT ITS ON THE LATER PARTS PLEASE </p>
-                        <p>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1ELNj8xXptxaTBgM5dQX87?si=ff211a4b4a9046a3" width="90%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                        
-                        </p>
-                        <br>
-                        <br>
-                        <h2>Yorushika Playlist</h2>
-                        <p>Let's just say I'm a huge fan of this...</p>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Bp5RRR2yn7h1QO8B7ySAU?utm_source=generator" width="90%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        <br>
-                        <br>
-                        <button type="button" onclick="toggleSpotifyPlaylist()">Return</button>
-                    </div>
-                
+            <!-- Manga Recommendations -->
+            <button type="button" class="RecommendationsBtn"><b>Manga Recommendations!</b></button>
+            <div class="Recommendations" id="Recommendations">
+                <span class="close-btn">&times;</span>
+                <h2>Manga Recommendations</h2>
+                <p>Under Construction...</p>
+                <button type="button" class="close-popup">Return</button>
+            </div>
+
+            <!-- QnA -->
+            <button type="button" class="QuestionsAndAnswers"><b>QnA</b></button>
+            <div class="QuestionsAndAnswers" id="QuestionsAndAnswers">
+                <span class="close-btn">&times;</span>
+                <h2>QuestionsAndAnswers</h2>
+                <p>Under Construction...</p>
+                <button type="button" class="close-popup">Return</button>
             </div>
         </div>
-        
-    <br>
+        <br>
+        <br>
     </div>
-
-    <script>
-        function toggleUpdateLog() { /*should fix the closing popup soon...*/
-            const updateLog = document.getElementById("UpdateLog");
-            updateLog.classList.toggle("open-UpdateLog");
-        }
-
-        function toggleSpotifyPlaylist() {
-            const spotifyPlaylist = document.getElementById("SpotifyPlaylist");
-            spotifyPlaylist.classList.toggle("open-SpotifyPlaylist");
-        }
-    </script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
