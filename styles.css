@@ -4,7 +4,7 @@ body, html {
     height: 100%;
     font-family: 'Courier New', Courier, monospace, sans-serif;
     background-color: #f0f0f0;
-    overflow: auto; /* Allows scrolling */
+    overflow: auto; /* Allows the scrolling portion*/
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
 }
@@ -64,7 +64,7 @@ button:active {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     align-items: left;
     font-size: 13px; 
-    display: inline-block; /* Ensure the button is displayed */
+    display: inline-block; 
 }
 
 /* Popup content */
@@ -95,7 +95,7 @@ button:active {
     height: 0;
 }
 
-/* Classes to show popups */
+
 .open-UpdateLog, .open-SpotifyPlaylist, .open-WorksAndStuff, .open-Recommendations, .open-QuestionsAndAnswers {
     visibility: visible;
     opacity: 1;
@@ -125,7 +125,7 @@ button:active {
     background-color: rgb(245, 245, 230);
 }
 
-/* Close button style */
+/* Close button */
 .close-btn {
     color: beige;
     float: right;
