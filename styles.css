@@ -1,38 +1,38 @@
+/* General styles */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Courier New', Courier, monospace, sans-serif;
     background-color: #f0f0f0;
-    overflow: auto; /* Allows the scrolling portion*/
+    overflow: auto;
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.background {
-    position: relative;
-    min-height: 100vh; 
+/* Apply background directly to body */
+body {
     background: url('Images/FjionJ_agAUhKt0.jpg') no-repeat center center fixed;
     background-size: cover;
-    overflow: hidden;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
 }
 
-.content, .stuff { /*The content itself*/
+/* Content styles */
+.content, .stuff {
     padding: 20px;
     background: rgba(255, 255, 225, 0.8);
     max-width: 1000px;
     border-radius: 30px;
-    border: none;
     margin: 0 auto;
+}
+
+.stuff {
     text-align: justify;
 }
 
@@ -44,41 +44,33 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: rgb(240, 173, 58);
-}
-
-button:active {
-    background-color: rgb(247, 201, 122);
-}
-
 /* Buttons for opening popups */
-.UpdateLogBtn, .SpotifyPlaylistBtn, .WorksAndStuffBtn, .RecommendationsBtn, .QuestionsAndAnswersBtn {
-    background: rgb(232, 151, 11);
+.UpdateLogBtn, .SpotifyPlaylistBtn, .PortfolioBtn, .RecommendationsBtn, .QuestionsAndAnswersBtn, .SettingsBtn {
+    background-color: rgb(232, 151, 11);
     border-radius: 10px;
-    outline: none;
-    border: 0;
-    width: 190px; 
-    height: 50px; 
+    border: none;
     font-family: 'Courier New', Courier, monospace;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    align-items: left;
-    font-size: 13px; 
-    display: inline-block; 
+    font-size: 15px;
+    display: inline-block;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
 }
 
 /* Popup content */
-.UpdateLog, .SpotifyPlaylist, .WorksAndStuff, .Recommendations, .QuestionsAndAnswers {
+.UpdateLog, .SpotifyPlaylist, .Portfolio, .Recommendations, .QuestionsAndAnswers, .Settings {
+    background-color: rgb(246, 192, 44);
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.7);
-    width: 780px;
-    background: rgb(246, 192, 44);
+    width: 70%;
     border-radius: 20px;
     text-align: justify;
     padding: 20px;
-    color: #000000;
+    color: #000;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
@@ -90,25 +82,23 @@ button:active {
 }
 
 /* Hides the scrollbar */
-.UpdateLog::-webkit-scrollbar, .SpotifyPlaylist::-webkit-scrollbar, .WorksAndStuff::-webkit-scrollbar, .Recommendations::-webkit-scrollbar, .QuestionsAndAnswers::-webkit-scrollbar {
+.UpdateLog::-webkit-scrollbar, .SpotifyPlaylist::-webkit-scrollbar, .Portfolio::-webkit-scrollbar, .Recommendations::-webkit-scrollbar, .QuestionsAndAnswers::-webkit-scrollbar, .Settings::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
 
-
-.open-UpdateLog, .open-SpotifyPlaylist, .open-WorksAndStuff, .open-Recommendations, .open-QuestionsAndAnswers {
+.open-UpdateLog, .open-SpotifyPlaylist, .open-Portfolio, .open-Recommendations, .open-QuestionsAndAnswers, .open-Settings {
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
 
 /* Buttons inside popups */
-.UpdateLog button, .SpotifyPlaylist button, .WorksAndStuff button, .Recommendations button, .QuestionsAndAnswers button {
+.UpdateLog button, .SpotifyPlaylist button, .Portfolio button, .Recommendations button, .QuestionsAndAnswers button, .Settings button {
+    background: beige;
     padding: 10px 0;
     width: 100%;
-    background: beige;
-    border: 0;
-    outline: none;
+    border: none;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 300;
     font-size: 18px;
@@ -117,11 +107,51 @@ button:active {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.UpdateLog button:hover, .SpotifyPlaylist button:hover, .WorksAndStuff button:hover, .Recommendations button:hover, .QuestionsAndAnswers button:hover {
+/* Buttons inside settings */
+.button-container {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+}
+
+.image-button {
+    width: 50px; /* Adjust button dimensions */
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.image-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image1 {
+    background-image: url("Images/FjionJ_agAUhKt0.jpg");
+}
+
+.image2 {
+    background-image: url("Images/F7gViGibwAAbTVE.jpg");
+}
+
+.image3 {
+    background-image: url("Images/GRU4WHGbQAAuir0.jpg");
+}
+
+/* Button hover & active states inside popups */
+.UpdateLog button:hover, .SpotifyPlaylist button:hover, .Portfolio button:hover, .Recommendations button:hover, .QuestionsAndAnswers button:hover, .Settings button:hover {
     background-color: rgb(245, 245, 200);
 }
 
-.UpdateLog button:active, .SpotifyPlaylist button:active, .WorksAndStuff button:active, .Recommendations button:active, .QuestionsAndAnswers button:active {
+.UpdateLog button:active, .SpotifyPlaylist button:active, .Portfolio button:active, .Recommendations button:active, .QuestionsAndAnswers button:active, .Settings button:active {
     background-color: rgb(245, 245, 230);
 }
 
@@ -136,4 +166,13 @@ button:active {
 
 .close-btn:hover, .close-btn:focus {
     color: red;
+}
+
+/* Global button states */
+button:hover {
+    background-color: rgb(240, 173, 58);
+}
+
+button:active {
+    background-color: rgb(247, 201, 122);
 }
