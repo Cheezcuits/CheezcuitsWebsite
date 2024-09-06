@@ -1,21 +1,3 @@
-/* General styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Courier New', Courier, monospace, sans-serif;
-    background-color: #f0f0f0;
-    overflow: auto;
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in forwards;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Apply background directly to body */
 body {
     background: url('Images/FjionJ_agAUhKt0.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -23,29 +5,56 @@ body {
     transition: background-image 0.5s ease-in-out;
 }
 
-/* Content styles */
-.content, .stuff {
-    padding: 20px;
-    background: rgba(255, 255, 225, 0.8);
-    max-width: 1000px;
-    border-radius: 30px;
-    margin: 0 auto;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.stuff {
-    text-align: justify;
-}
-
-.content {
+.Title{
     text-align: center;
 }
 
-button {
-    cursor: pointer;
+.Title, .InformationButton, .AboutMe{
+    max-width: 80%;
+    height:100%;
 }
 
-/* Buttons for opening popups */
-.UpdateLogBtn, .SpotifyPlaylistBtn, .PortfolioBtn, .RecommendationsBtn, .QuestionsAndAnswersBtn, .SettingsBtn {
+.Title, .InformationButton, .AboutMe, .SpotifyPlaylist1, .SpotifyPlaylist2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: transparent;
+    overflow: auto;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    padding: 20px;
+    background: rgba(255, 255, 225, 0.8);
+    border-radius: 30px;
+    max-width: 80%;
+    height:100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.SpotifyPlaylist {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.SpotifyPlaylist1, .SpotifyPlaylist2{
+    width: 570px;
+    height: 565px;
+    background: rgba(255, 255, 225, 0.8);
+    border-radius: 30px;
+} 
+
+.SpotifyPlaylist1, .SpotifyPlaylist2 {
+    margin: 0;
+    padding: 20;
+}
+
+.UpdateLogBtn, .SettingsBtn { /*Buttons for Popup*/
     background-color: rgb(232, 151, 11);
     border-radius: 10px;
     border: none;
@@ -59,15 +68,16 @@ button {
     padding: 10px 20px;
 }
 
-/* Popup content */
-.UpdateLog, .SpotifyPlaylist, .Portfolio, .Recommendations, .QuestionsAndAnswers, .Settings {
+.UpdateLog, .Settings{ /*Popup content*/
     background-color: rgb(246, 192, 44);
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.7);
+    height: 70%;
     width: 70%;
     border-radius: 20px;
+    border: 0;
     text-align: justify;
     padding: 20px;
     color: #000;
@@ -79,100 +89,58 @@ button {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     font-size: 18px;
     font-weight: 500;
+    z-index: 1000; 
+    box-sizing: border-box;
 }
 
-/* Hides the scrollbar */
-.UpdateLog::-webkit-scrollbar, .SpotifyPlaylist::-webkit-scrollbar, .Portfolio::-webkit-scrollbar, .Recommendations::-webkit-scrollbar, .QuestionsAndAnswers::-webkit-scrollbar, .Settings::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
-
-.open-UpdateLog, .open-SpotifyPlaylist, .open-Portfolio, .open-Recommendations, .open-QuestionsAndAnswers, .open-Settings {
+.open-UpdateLog, .open-Settings{/*Opens popup*/
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
 
-/* Buttons inside popups */
-.UpdateLog button, .SpotifyPlaylist button, .Portfolio button, .Recommendations button, .QuestionsAndAnswers button, .Settings button {
-    background: beige;
-    padding: 10px 0;
-    width: 100%;
-    border: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 300;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+.UpdateLog::-webkit-scrollbar, .Settings::-webkit-scrollbar, .SpotifyPlaylist1::-webkit-scrollbar{/*Hides scrollbar*/
+    width:0;
+    height:0;
 }
 
-/* Buttons inside settings */
+.close-popup { /* Close button for popups */
+    background-color: rgb(232, 151, 11);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .button-container {
     justify-content: center;
     align-items: center;
-    position: relative;
-    width: 100px; /* Adjust width as needed */
-    height: 100px; /* Adjust height as needed */
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    border-radius:20px;
+    border: none;
 }
 
 .image-button {
-    width: 50px; /* Adjust button dimensions */
-    height: 50px;
     align-items: center;
     justify-content: center;
     border: none;
-    border-radius: 10px;
     background-color: transparent;
     overflow: hidden;
     box-sizing: border-box;
 }
 
 .image-button img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.image1 {
-    background-image: url("Images/FjionJ_agAUhKt0.jpg");
-}
-
-.image2 {
-    background-image: url("Images/F7gViGibwAAbTVE.jpg");
-}
-
-.image3 {
-    background-image: url("Images/GRU4WHGbQAAuir0.jpg");
-}
-
-/* Button hover & active states inside popups */
-.UpdateLog button:hover, .SpotifyPlaylist button:hover, .Portfolio button:hover, .Recommendations button:hover, .QuestionsAndAnswers button:hover, .Settings button:hover {
-    background-color: rgb(245, 245, 200);
-}
-
-.UpdateLog button:active, .SpotifyPlaylist button:active, .Portfolio button:active, .Recommendations button:active, .QuestionsAndAnswers button:active, .Settings button:active {
-    background-color: rgb(245, 245, 230);
-}
-
-/* Close button */
-.close-btn {
-    color: beige;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close-btn:hover, .close-btn:focus {
-    color: red;
-}
-
-/* Global button states */
-button:hover {
-    background-color: rgb(240, 173, 58);
-}
-
-button:active {
-    background-color: rgb(247, 201, 122);
+   width:100px;
+   height:100px;
+   border-radius:20px;
+   object-fit: cover;
 }
