@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
 const popups = {
     'Settings': {
         button: '.SettingsBtn',
@@ -78,5 +77,6 @@ function changeBackground(imageClass) {
         console.error(`No URL found for image class: ${imageClass}`);
     }
 }
+document.addEventListener('DOMContentLoaded', () => {
     initializeButtons();
 });
