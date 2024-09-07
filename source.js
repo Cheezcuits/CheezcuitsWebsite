@@ -53,6 +53,12 @@ function initializeButtons() {
             });
         }
 
+        if (popupElement) {
+            popupElement.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent click from propagating to document
+            });
+        }
+
         document.addEventListener('click', (e) => {
             if (popupElement && !popupElement.contains(e.target) && !buttonElement.contains(e.target)) {
                 closeAllPopups();
@@ -77,6 +83,7 @@ function changeBackground(imageClass) {
         console.error(`No URL found for image class: ${imageClass}`);
     }
 }
+
 document.addEventListener('DOMContentLoaded', () => {
     initializeButtons();
 });
