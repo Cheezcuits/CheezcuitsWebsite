@@ -37,7 +37,7 @@ function initializeButtons() {
 
         if (buttonElement) {
             buttonElement.addEventListener('click', (e) => {
-                e.stopPropagation(); // Prevent click from propagating to document
+                e.stopPropagation(); 
                 closeAllPopups();
                 togglePopup(popup, openClass);
             });
@@ -48,14 +48,14 @@ function initializeButtons() {
         const closeButton = document.querySelector(`${popup} .close-popup`);
         if (closeButton) {
             closeButton.addEventListener('click', (e) => {
-                e.stopPropagation(); // Prevent click from propagating to document
+                e.stopPropagation(); 
                 closeAllPopups();
             });
         }
 
         if (popupElement) {
             popupElement.addEventListener('click', (e) => {
-                e.stopPropagation(); // Prevent click from propagating to document
+                e.stopPropagation(); 
             });
         }
 
