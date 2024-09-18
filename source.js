@@ -1,3 +1,31 @@
+var texts = [
+    "Don't mind the 70 commits on August, it was me trying to change the background AND IT'S NOT WORKING FOR SOME REASON.",
+    "Cheese.",
+    "I 'love' coding",
+    "You must Gangnam... Like I have.",
+    "⚖️ + 💡 + 🐦",
+    "I am inexperienced.",
+    "Dancing, walking, rearranging furniture.",
+    "Bocchi the rock!",
+    "j",
+    "I NEED MONEY OH MY GOD",
+    "Why did I choose this course...",
+    "... FOR MONEY OF COURSE!!!",
+    "var texts = ['your text here', 'your text here also',] and replace it with double quotation marks",
+    "printf('Maayong Buntag');",
+    "future bantay ng comshop",
+    "qwertyuiopasdfghjklzxcvbnm,",
+    "Open the curtains, lights on...",
+    "This is a random text",
+    "9",
+    "BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA",
+    "You are not immune to propaganda.",
+    "If you are wondering why I keep using '', because the other one is not allowed.",
+    "(p∧q)∨(¬p∧¬q)",
+    "Why do they commit sins, knowing it's wrong?",
+    "I keep adding useless stuff here rather than doing productive work",
+];
+
 const popups = {
     'Settings': {
         button: '.SettingsBtn',
@@ -37,7 +65,8 @@ function initializeButtons() {
 
         if (buttonElement) {
             buttonElement.addEventListener('click', (e) => {
-                e.stopPropagation(); 
+                console.log(`${key} button clicked`);
+                e.stopPropagation();
                 closeAllPopups();
                 togglePopup(popup, openClass);
             });
@@ -48,14 +77,14 @@ function initializeButtons() {
         const closeButton = document.querySelector(`${popup} .close-popup`);
         if (closeButton) {
             closeButton.addEventListener('click', (e) => {
-                e.stopPropagation(); 
+                e.stopPropagation();
                 closeAllPopups();
             });
         }
 
         if (popupElement) {
             popupElement.addEventListener('click', (e) => {
-                e.stopPropagation(); 
+                e.stopPropagation();
             });
         }
 
@@ -85,5 +114,10 @@ function changeBackground(imageClass) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Set a random text on page load
+    const randomTextDiv = document.getElementById('randomText');
+    randomTextDiv.textContent = texts[Math.floor(Math.random() * texts.length)];
+
+    // Initialize button event listeners
     initializeButtons();
 });
