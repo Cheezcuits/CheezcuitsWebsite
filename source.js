@@ -6,7 +6,7 @@ var texts = [
     "⚖️ + 💡 + 🐦",
     "I am inexperienced.",
     "Dancing, walking, rearranging furniture.",
-    "Bocchi the rock!",
+    "Bocchi the Rock!",
     "j",
     "I NEED MONEY OH MY GOD",
     "Why did I choose this course...",
@@ -14,17 +14,12 @@ var texts = [
     "var texts = ['your text here', 'your text here also',] and replace it with double quotation marks",
     "printf('Maayong Buntag');",
     "future bantay ng comshop",
-    "qwertyuiopasdfghjklzxcvbnm,",
     "Open the curtains, lights on...",
     "This is a random text",
     "9",
-    "BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA BAKA",
-    "You are not immune to propaganda.",
-    "If you are wondering why I keep using '', because the other one is not allowed.",
     "(p∧q)∨(¬p∧¬q)",
     "Why do they commit sins, knowing it's wrong?",
     "I keep adding useless stuff here rather than doing productive work",
-    "Ame doko?",
 ];
 
 const popups = {
