@@ -72,41 +72,19 @@ body {
     border-radius: 10px;
 }
 
-.SpotifyPlaylist, .MRecommends {
+.SpotifyPlaylist {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.RecommendationsPart{
-    width: 830px;
-    height: 565px;
-    background: rgba(255, 255, 225, 0.8);
-    border-radius: 30px;
-}
-
-.CommentPart{
-    width: 310px;
-    height: 565px;
-    background: rgba(255, 255, 225, 0.8);
-    border-radius: 30px;
-}
-
-#Comment{
-    font-size: 50px;
-    overflow-wrap: break-word;
-}
-
-.SpotifyPlaylist1, .SpotifyPlaylist2{
+.SpotifyPlaylist1, .SpotifyPlaylist2 {
     width: 570px;
     height: 565px;
     background: rgba(255, 255, 225, 0.8);
     border-radius: 30px;
-} 
-
-.SpotifyPlaylist1, .SpotifyPlaylist2, .RecommendationsPart, .CommentPart {
     margin: 0;
-    padding: 20;
+    padding: 20px; 
 }
 
 .UpdateLogBtn, .SettingsBtn { /*Buttons for Popup*/
@@ -198,4 +176,19 @@ body {
    height:100px;
    border-radius:20px;
    object-fit: cover;
+}
+
+@media only screen and (max-width: 720px) {
+    .SpotifyPlaylist {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .SpotifyPlaylist1, .SpotifyPlaylist2 {
+        width: 100%; 
+    }
 }
