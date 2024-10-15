@@ -20,7 +20,7 @@ var texts = [
     "(p∧q)∨(¬p∧¬q)",
     "Why do they commit sins, knowing it's wrong?",
     "I keep adding useless stuff here rather than doing productive work",
-    "Ame doko?".
+    "Ame doko?",
 ];
 
 const popups = {
