@@ -1,202 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="Images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/8e/f8/61/8ef861ce08063a9ca4544abd6e5c29e4.jpg">
     <script src="source.js" defer></script>
-    <title>My Silly Website!</title>
+    <title>Keso's Website</title>
 </head>
-<br>
+
 <body>
-    <div class="Title">
-        <h1>Welcome To My Silly Website!</h1>
-        <h3><div id="randomText"></div></h3>
-        <p>Version 1.2.5</p>
-    </div>
-<br>
-    <div class="AboutMe">
-        <h2>About Me!</h2>
-        <p>Hello, I'm <b>Cheddar</b>. You can also call me <b>Cheezcuits</b> or <b>Keso</b> or any variations of sorts. I enjoy playing 
-            video games, doing silly coding projects, and reading mangas and manhwas. I am currently a freshman at Polytechnic University 
-            of the Philippines or PUP for short.</p> 
-    
-        <h2>What is this website all about?</h2>
-        <p>This website revolves around me trying to hone my skills in programming languages, mainly focused on Web Development such as
-            HTML, CSS, and possibly JavaScript. With the current state of the website (v1.2.5), it is still a work in progress.</p>
-        <p>This website is not meant for a professional manner, but more of a hobby/passion.</p>
-        <p>Expect changes to this website over time. It may be slow or not in a scheduled manner, but it will certainly improve, hopefully.</p>
-
-        <p>The background images are made by @JL_T4N on Twitter :></p>
-    </div>
-<br>
-<div class="SpotifyPlaylist">
-        <div class="SpotifyPlaylist1">
-        <h2>Spotify Playlist</h2>
-        <p>You will see a lot of terrible choices...</p>
-        <p>Since it only shows 100 songs, you can visit the almost <b><u>500</u></b> (dear lord, what is wrong with me) songs on my very "<b>normal</b>" playlist in the top right of the playlist :></p>
-        <p>Good luck with this playlist... oh god, it's horrendous...</p>
-        <iframe 
-            style="border-radius:12px" 
-            src="https://open.spotify.com/embed/playlist/1ELNj8xXptxaTBgM5dQX87?utm_source=generator" 
-            width="90%" 
-            height="352" 
-            frameborder="0" 
-            allowfullscreen 
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            loading="lazy">
-        </iframe>
+    <div class="Interface">
+        <!-- Title Section -->
+        <div class="Title" id="floating-text" style="text-align: center;">
+            <h1 style="margin-bottom: 0; font-size: 50px;">Keso's Website</h1>
+            <p style="margin-top: -10px;">Version 2.0.0</p>
         </div>
-        <div class="SpotifyPlaylist2">
-        <h2>Yorushika Playlist</h2>
-        <p>Let's just say I'm a huge fan of this...</p>
-        <iframe style="border-radius:12px" 
-            src="https://open.spotify.com/embed/playlist/1Bp5RRR2yn7h1QO8B7ySAU?utm_source=generator" 
-            width="90%" 
-            height="352" 
-            frameborder="0" 
-            allowfullscreen 
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            loading="lazy">
-        </iframe>
+        
+        <br>
+        <!-- Button Section -->
+        <div class="InfoButtons" style="text-align: center;">
+            <button id="ButtonChoices1">About</button>
+            <button id="ButtonChoices2">Projects</button>
+            <button id="ButtonChoices3">Socials</button>
+            <button id="ButtonChoices4">Spotify</button>
+            <button id="ButtonChoices5">UpdateLog</button>
         </div>
-</div> 
-</div>
-<br>
-<div class="Socials">
-    <h2>Socials!</h2>
-    <a href="hhttps://github.com/Cheezcuits" target="_blank"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" id="SocialsImages"></a>
-</div>
-<br>
-<div class="InformationButton">
-    <button type="button" class="UpdateLogBtn"><b>Update Log</b></button>
-    <div class="UpdateLog" id="UpdateLog">
-        <h2>Update Log!</h2>
 
-        <h4>Version 1.2.5</h4>
-        <p>(10/15/24)<p> 
-        <p>Fixed the website on mobile mode.</p>
+        <br>
 
-        <h4>Version 1.2.4</h4>
-        <p>(10/2/24)</p>
-        <p>Removed Manga Recommendations</p>
-        <p>This website will be unlikely to be updated regularly.</p>
+        <!-- Stuffs -->
+        <div id="About" class="hidden Interface">
+            <h2 class="section-title">About Me!</h2>
+            <p class="description">Hello, I'm <strong>Cheddar</strong>. You can also call me <strong>Cheezcuits</strong> or <strong>Keso</strong> or any variations of sorts. I enjoy playing video games, doing silly coding projects, and reading mangas and manhwas. I am currently a freshman at the Polytechnic University of the Philippines (PUP).</p>
 
-        <h4>Version 1.2.3</h4>
-        <p>(9/18/24)</p>
-        <p>This very spaghetti coded website is now one month old!</p>
-        <p>Added splash text, I think what that it's called?</p>
-
-        <h4>Version 1.2.2</h4>
-        <p>(9/15/24)</p>
-        <p>Changed font (ended friendship with courier, comfortaa is my new best friend)</p>
-        <p>Added Socials (only GitHub for now).</p>
-
-        <h4>Version 1.2.1</h4>
-        <p>(9/7/24)</p>
-        <p>Fixed Manga/Manhwa images</p>
-
-        <h4>Version 1.2.0</h4>
-        <p>(9/7/24)</p>
-        <p>Added a Manga/Manhwa Recommendations section</p>
-        <p>Added 12 Mangas</p>
-        <p>Added 2 Manhwas</p>
-
+            <h2 class="section-title">What is this website all about?</h2>
+            <p class="description">This website revolves around me trying to hone my skills in programming languages, mainly focused on Web Development such as HTML, CSS, and possibly JavaScript. With the current state of the website (v2.0.0), it is still a work in progress.</p>
+            <p class="description">This website is not meant for a professional manner, but more of a hobby/passion.</p>
+            <p class="description">Expect changes to this website over time. It may be slow or not in a scheduled manner, but it will certainly improve, hopefully.</p>
+         </div>
+         
+         <div id="Projects" class="hidden Interface">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <a href="https://cheezcuits-website.vercel.app/" target="_blank">
+                    <img src="https://i.pinimg.com/736x/8e/f8/61/8ef861ce08063a9ca4544abd6e5c29e4.jpg" style="border-radius:5px;" alt="Cheezcuits Website" class="project-icon"></a>
+                    <p>Cheezcuits Website</p>
+                </li>
+                <li>
+                    <a href="https://keso-s-recommended-mangas.vercel.app/" target="_blank">
+                    <img src="March7th.jpg" style="border-radius:5px;" alt="Keso's Recommended Mangas" class="project-icon"></a>
+                    <p>Keso's Recommended Mangas</p>
+                </li>
+            </ul>
+         </div>
+         
+         <div id="Socials" class="hidden Interface">
+            <h2>Socials!</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/Cheezcuits" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="border-radius:5px;" alt="GitHub Logo" class="social-icon"></a> 
+                </li>
+                <li>
+                    <a href="https://steamcommunity.com/id/KesongLigaw" target="_blank">
+                    <img src="https://cdn.freebiesupply.com/images/large/2x/steam-logo-transparent.png" style="border-radius:5px;" alt="Steam Logo" class="social-icon"></a> 
+                </li>
+                <li>
+                    <a href="https://discord.com/users/628564643761225729" target="_blank">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-round-color-icon.png" style="border-radius:5px;" alt="Discord Logo" class="social-icon"></a> 
+                </li>
+            </ul>
+         </div>
+         
+         <div id="Spotify" class="hidden Interface">
+            <h2>Spotify Playlist</h2>
+            <p class="description">You will see a lot of terrible choices... 
+            <p class="description" style="text-align: center;">Since it only shows 100 songs, you can visit the almost <b><u>500</u></b> (dear lord, what is wrong with me) songs on my very "<b>normal</b>" playlist in the top right of the playlist :></p>
+            <p class="description">Good luck with this playlist... oh god, it's horrendous... (Shuffle can't even save this...)</p>
+            <iframe 
+                style="border-radius:12px" 
+                src="https://open.spotify.com/embed/playlist/1ELNj8xXptxaTBgM5dQX87?utm_source=generator" 
+                width="90%" 
+                height="352" 
+                frameborder="0" 
+                allowfullscreen 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
         
-        <h4>Version 1.1.8</h4>
-        <p>(9/6/24)</p>
-        <p>Remodeled the interface</p>
-        <p>Removed/Relocated some popups</p>
+            <h2>Yorushika Playlist</h2>
+            <p class="description">Let's just say I'm a huge fan of this...</p>
+            <iframe style="border-radius:12px" 
+                src="https://open.spotify.com/embed/playlist/1Bp5RRR2yn7h1QO8B7ySAU?utm_source=generator" 
+                width="90%" 
+                height="352" 
+                frameborder="0" 
+                allowfullscreen 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+        </div>     
+         
+        <!-- Update Log Section -->
+        <div id="UpdateLog" class="hidden Interface">
+            <br>
+            <h2>Update Log!</h2>
+            <h4>Version 2.0.0</h4>
+            <p>(1/04/25)</p>
+            <p><b>A complete rework of everything.</b></p>
+            <p>5 Buttons: About, Projects, Socials, Spotify, UpdateLog</p>
+            <p>No more silliness</p>
+            <p>Removed any Bocchi The Rock related stuffs</p>
+            <p>No more splash texts</p>
+            <p>Added project content</p>
+            <p>Different Favicon</p>
+            <br>
+            <h4>Version 1.2.3</h4>
+            <p>(9/18/24)</p>
+            <p>This very spaghetti coded website is now one month old!</p>
+            <p>Added splash text, I think what that it's called?</p>
+            <br>
+            <h4>Version 1.2.2</h4>
+            <p>(9/15/24)</p>
+            <p>Changed font (ended friendship with courier, comfortaa is my new best friend)</p>
+            <p>Added Socials (only GitHub for now).</p>
+            <br>
+            <h4>Version 1.2.1</h4>
+            <p>(9/7/24)</p>
+            <p>Fixed Manga/Manhwa images</p>
+            <br>
+            <h4>Version 1.2.0</h4>
+            <p>(9/7/24)</p>
+            <p>Added a Manga/Manhwa Recommendations section</p>
+            <p>Added 12 Mangas</p>
+            <p>Added 2 Manhwas</p>
+            <br>
+            <h4>Version 1.1.8</h4>
+            <p>(9/6/24)</p>
+            <p>Remodeled the interface</p>
+            <p>Removed/Relocated some popups</p>
+            <br>
+            <h4>Version 1.1.7</h4>
+            <p>(8/31/24)</p>
+            <p>Placed "Stuffs" above the "About me!"</p>
+            <p>QnA is added.</p>
+            <p>Interchangeable background is added.</p>
+            <br>
+            <h4>Version 1.1.6</h4>
+            <p>(8/20/24)</p>
+            <p>Separated the JS part of the HTML into its own file.</p>
+            <p>Made sure the JS file works inside Vercel.</p>
+            <p>Fixed the clicking outside the popup in Vercel.</p>
+            <br>
+            <h4>Version 1.1.5</h4>
+            <p>(8/20/24)</p>
+            <p>Made the popups close when clicking outside the popup or on other popups.</p>
+            <p>Updated the Update Log to show the most recent changes.</p>
+            <p>Resized the popup size, font size and color a bit.</p>
+            <p>Added a button and popup for "Works and Stuff", "Manga Recommendations".</p>
+            <p>The "QnA" popup isn't working so I will add it soon.</p>
+            <p>Unfortunately, there is no content <u>FOR NOW</u> in the aforementioned popups.</p>
+            <br>
+            <h4>Version 1.1.4</h4>
+            <p>(8/19/24)</p>
+            <p>Added a Spotify playlist and created a popup for it.</p>
+            <p>Also added a favicon.</p>
+            <br>
+            <h4>Version 1.1.3</h4>
+            <p>(8/19/24)</p>
+            <p>Added a popup for the update log.</p>
+            <br>
+            <h4>Version 1.1.2</h4>
+            <p>(8/18/24)</p>
+            <p>Added rounded corners and separated the title from the content.</p>
+            <br>
+            <h4>Version 1.1.1</h4>
+            <p>(8/18/24)</p>
+            <p>Added a scrollbar, which was not working previously.</p>
+            <p>Resized the Update Log.</p>
+            <p>Added some content and the date of each version.</p>
+            <br>
+            <h4>Version 1.1.0</h4>
+            <p>(8/18/24)</p>
+            <p>Imported this repository to Vercel (took too long to fix).</p> 
+            <p>Added more text to "About Me!" and more sections to the webpage.</p>
+            <br>
+            <h4>Version 1.0.2</h4>
+            <p>(8/17/24)</p>
+            <p>Made Ryo the background and ensured it stays visible.</p> 
+            <p>Added a fade-in effect to the website.</p> 
+            <br>
+            <h4>Version 1.0.1</h4>
+            <p>(8/17/24)</p>
+            <p>Ryo was the background but gradually faded out.</p> 
+            
+            <h4>Version 1.0.0</h4>
+            <p>(8/17/24)</p>
+            <p>Initial creation of the website; Ryo was not the background.</p>
+        </div>
 
-        <h4>Version 1.1.7</h4>
-        <p>(8/31/24)</p>
-        <p>Placed "Stuffs" above the "About me!"</p>
-        <p>QnA is added.</p>
-        <p>Interchangeable background is added.</p>
-
-        <h4>Version 1.1.6</h4>
-        <p>(8/20/24)</p>
-        <p>Separated the JS part of the HTML into its own file.</p>
-        <p>Made sure the JS file works inside Vercel.</p>
-        <p>Fixed the clicking outside the popup in Vercel.</p>
-        
-        <h4>Version 1.1.5</h4>
-        <p>(8/20/24)</p>
-        <p>Made the popups close when clicking outside the popup or on other popups.</p>
-        <p>Updated the Update Log to show the most recent changes.</p>
-        <p>Resized the popup size, font size and color a bit.</p>
-        <p>Added a button and popup for "Works and Stuff", "Manga Recommendations".</p>
-        <p>The "QnA" popup isn't working so I will add it soon.</p>
-        <p>Unfortunately, there is no content <u>FOR NOW</u> in the aforementioned popups.</p>
-
-        <h4>Version 1.1.4</h4>
-        <p>(8/19/24)</p>
-        <p>Added a Spotify playlist and created a popup for it.</p>
-        <p>Also added a favicon.</p>
-
-        <h4>Version 1.1.3</h4>
-        <p>(8/19/24)</p>
-        <p>Added a popup for the update log.</p>
-
-        <h4>Version 1.1.2</h4>
-        <p>(8/18/24)</p>
-        <p>Added rounded corners and separated the title from the content.</p>
-
-        <h4>Version 1.1.1</h4>
-        <p>(8/18/24)</p>
-        <p>Added a scrollbar, which was not working previously.</p>
-        <p>Resized the Update Log.</p>
-        <p>Added some content and the date of each version.</p>
-
-        <h4>Version 1.1.0</h4>
-        <p>(8/18/24)</p>
-        <p>Imported this repository to Vercel (took too long to fix).</p> 
-        <p>Added more text to "About Me!" and more sections to the webpage.</p>
-
-        <h4>Version 1.0.2</h4>
-        <p>(8/17/24)</p>
-        <p>Made Ryo the background and ensured it stays visible.</p> 
-        <p>Added a fade-in effect to the website.</p> 
-
-        <h4>Version 1.0.1</h4>
-        <p>(8/17/24)</p>
-        <p>Ryo was the background but gradually faded out.</p> 
-        
-        <h4>Version 1.0.0</h4>
-        <p>(8/17/24)</p>
-        <p>Initial creation of the website; Ryo was not the background.</p>
-
-        <button type="button" class="close-popup">Return</button>
     </div>
-
-    <button type="button" class="SettingsBtn"><b>Settings</b></button>
-        <div class="Settings" id="Settings">
-            <h2>Settings</h2>
-            <h4>Change Background</h4>
-            <div class="button-container">
-                <button type="button" class="image-button" onclick="changeBackground('image1')">
-                    <img src="Images/RyoIcon.png" alt="Ryo Icon">
-                </button>
-                <button type="button" class="image-button" onclick="changeBackground('image2')">
-                    <img src="Images/BocchiIcon.png" alt="Bocchi Icon">
-                </button>
-                <button type="button" class="image-button" onclick="changeBackground('image3')">
-                    <img src="Images/NijikaIcon.png" alt="Nijika Icon">
-                </button>
-                <br>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <button type="button" class="close-popup">Return</button>
-        </div>
-</div>
 </body>
+
 </html>
