@@ -1,194 +1,227 @@
-body {
-    background: url('Images/FjionJ_agAUhKt0.jpg') no-repeat center center fixed;
-    background-size: cover;
-    background-position: center;
-    transition: background-image 0.5s ease-in-out;
+html {
+    font-family: "EB Garamond", serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(22, 22, 22);
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.Title{
+.Title {
+    color: #ebebeb;
     text-align: center;
 }
 
-.Title, .InformationButton, .AboutMe, .Socials{
-    max-width: 80%;
-    height:100%;
-}
-
-.Title, .InformationButton, .AboutMe, .SpotifyPlaylist1, .SpotifyPlaylist2, .RecommendationsPart, .CommentPart, .Socials{
+body {
     margin: 0;
     padding: 0;
-    background-color: transparent;
-    font-family: 'Comfortaa';
-    overflow: auto;
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in forwards;
-    padding: 20px;
-    background: rgba(255, 255, 225, 0.8);
-    border-radius: 30px;
-    max-width: 80%;
-    height:100%;
-    margin: 0 auto;
-    justify-content: center;
-}
-
-#randomText{
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    font-family: 'Comfortaa';
-    overflow: auto;
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in forwards;
-    padding: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    border: 0;
+    height: 100vh;
 }
 
+.Interface {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
 
-.MRecommendsContent{
-    overflow-wrap: break-word;
+.Interface > div {
+    overflow-y: scroll; 
+    max-height: 70vh;   
+}
+
+.Interface > div::-webkit-scrollbar {
+    width: 0px; 
+    height: 0px; 
+}
+
+.About, .Project, .Socials, .Playlist, .UpdateLog {
+    font-family: "EB Garamond", serif;
+    border: 1px solid #434343;
+    color: #434343;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 1000px;
+    padding: 30px;
+    margin: 20px auto;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+#About, #Project, #Socials, #Playlist, #UpdateLog {
+    color: #f9f9f9;
+}
+
+#About p, #Spotify p, #Projects p{
+    color: #f9f9f9; 
     font-size: 20px;
 }
 
-#MangaImages{
-    float:left;
-    margin: 0 15px 0 0;
-    width:300px;
-    height:400px;
-    border-radius: 20px;
+#About h2, #Spotify h2, #Projects h2, #UpdateLog h2{
+    color: #f9f9f9; 
+    font-size: 30px;
 }
 
-#SocialsImages{
-    float:left;
-    margin: 0 15px 0 0;
-    width:50px;
-    height:50px;
-    border-radius: 10px;
-}
-
-.SpotifyPlaylist {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.SpotifyPlaylist1, .SpotifyPlaylist2 {
-    width: 570px;
-    height: 565px;
-    background: rgba(255, 255, 225, 0.8);
-    border-radius: 30px;
+#UpdateLog h4,#UpdateLog p {
     margin: 0;
-    padding: 20px; 
-}
-
-.UpdateLogBtn, .SettingsBtn { /*Buttons for Popup*/
-    background-color: rgb(232, 151, 11);
-    border-radius: 10px;
-    border: none;
-    font-family: 'Comfortaa';
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    font-size: 15px;
-    display: inline-block;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-}
-
-.UpdateLog, .Settings{ /*Popup content*/
-    background-color: rgb(246, 192, 44);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.7);
-    height: 70%;
-    width: 70%;
-    border-radius: 20px;
-    border: 0;
-    text-align: justify;
-    padding: 20px;
-    color: #000;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
-    max-height: 80vh;
-    overflow: auto;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    font-size: 18px;
-    font-weight: 500;
-    z-index: 1000; 
-    box-sizing: border-box;
-}
-
-.open-UpdateLog, .open-Settings{/*Opens popup*/
-    visibility: visible;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.UpdateLog::-webkit-scrollbar, .Settings::-webkit-scrollbar, .SpotifyPlaylist1::-webkit-scrollbar, .RecommendationsPart::-webkit-scrollbar{/*Hides scrollbar*/
-    width:0;
-    height:0;
-}
-
-.close-popup { /* Close button for popups */
-    background-color: rgb(232, 151, 11);
-    border: none;
-    color: white;
-    padding: 10px 20px;
+    padding: 5px 0; 
+    font-size: 20px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: 'Comfortaa';
 }
 
-.button-container {
+.InfoButtons{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#ButtonChoices1, #ButtonChoices2, #ButtonChoices3, #ButtonChoices4, #ButtonChoices5 {
+    border: 1px solid #f9f9f9;
+    border-radius: 20px;
+    width: 150px;
+    height: 45px;
+    margin-right: 10px;
+    color: #434343;
+    font-family: "EB Garamond", serif;
+    font-size: 20px;
+    top: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#ButtonChoices1:hover, #ButtonChoices2:hover, #ButtonChoices3:hover, #ButtonChoices4:hover, #ButtonChoices5:hover {
+    box-shadow: 0 0 10px rgba(249, 249, 249, 0.6);
+    animation: wobble 10s infinite ease-in-out;
+}
+
+#ButtonChoices1:active, #ButtonChoices2:active, #ButtonChoices3:active, #ButtonChoices4:active, #ButtonChoices5:active {
+    box-shadow: 0 0 10px rgba(255, 253, 133, 0.9);
+    border: 1px solid rgb(255, 253, 133);
+}
+
+#ButtonChoices1.active, #ButtonChoices2.active, #ButtonChoices3.active, #ButtonChoices4.active, #ButtonChoices5.active {
+    box-shadow: 0 0 10px rgba(255, 253, 133, 0.9);
+    border: 1px solid rgb(255, 253, 133);
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    visibility: hidden;
+    transition: opacity 0.5s, transform 0.5s, visibility 0.5s;
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.AboutMe {
+    height: auto;
+}
+
+#floating-text:hover {
+    transform: scale(1.02);
+}
+
+.Socials {
+    height: 120px;
+}
+
+.Projects p {
+    font-size: 10px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     justify-content: center;
-    align-items: center;
-    position: absolute;
-    display: flex;
-    gap: 10px;
-    border-radius:20px;
-    border: none;
+    list-style-type: none;
+    text-align: center;
+    color:#f9f9f9;
 }
 
-.image-button {
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background-color: transparent;
-    overflow: hidden;
-    box-sizing: border-box;
+.project-icon{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.image-button img {
-   width:100px;
-   height:100px;
-   border-radius:20px;
-   object-fit: cover;
+.social-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-@media only screen and (max-width: 720px) {
-    .SpotifyPlaylist {
-        display: grid; 
-        grid-template-columns: 1fr; 
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
+.img:hover, .social-icon:hover {
+    transform: scale(1.1);
+}
+
+#floating-text h1, #floating-text p {
+    animation: float 10s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-3deg);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .Interface {
+        width: 90%;
     }
 
-    .SpotifyPlaylist1, .SpotifyPlaylist2 {
-        width: 100%; 
+    .AboutMe, .Socials {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .InfoButtons {
+        display: grid center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #ButtonChoices1, #ButtonChoices2, #ButtonChoices3, #ButtonChoices4, #ButtonChoices5 {
+        margin-bottom: 10px;
+        width: 130px;
+    }
+
+    #Spotify h2, #Spotify p {
+        font-size: 20px;
     }
 }
