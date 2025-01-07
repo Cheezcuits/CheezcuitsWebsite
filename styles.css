@@ -143,13 +143,21 @@ body {
 ul {
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-content: center;
     list-style-type: none;
     text-align: center;
     color:#f9f9f9;
+}
+
+.ProjectList{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.SocialsList{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .project-icon{
